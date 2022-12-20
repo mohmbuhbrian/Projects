@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&display=swap');
+
 body{
     background-color: #f4f4f4;
+}
+header.header-container nav.navbar ul li{
+    border: 2px groove (internal value);
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: pink; 
+    padding-block: 1%;
+    border-radius: 50%;
+}
+
+div.Welcome-text-container :hover { 
+    animation: scaleOut 2s linear;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px auto;
+    font-weight: 100;
+    color: rgb(65, 65, 59);
 }
