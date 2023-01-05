@@ -1,43 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&display=swap');
-
 body{
-   
-    background-color: #C7CCB9;
+    background-color: #7f7f7f;
 }
 
-header.header-container nav ul.navbar-container {
-    align-items: center;
-    font-size: 25px;
-}
-header.header-container nav ul.navbar-container li{
-    list-style: none;
-    /* margin: 0 auto; */
-}
-header.header-container nav.navbar ul li{
-    border: 2px groove (internal value);
-    position: relative;
-    top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #7EA3CC; 
-    padding-block: 1%;
-    border-radius: 10%;
-} 
-
-div.Welcome-text-container :hover { 
-    animation: scaleOut 2s linear;
-    cursor: pointer;
-    text-decoration: none;
-    margin: 20px auto;
-    font-weight: 100;
-    color: rgb(65, 65, 59);
-}
-.img {
-    list-style: none;
-    font-weight: 700;
-    padding: 1.3rem 0.9rem;
-} 
 .navbar{
     width: 85%;
     margin: auto;
@@ -47,12 +11,14 @@ div.Welcome-text-container :hover {
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
+
 .navbar ul li a{
     text-decoration: none;
     color: whitesmoke;
@@ -60,6 +26,7 @@ div.Welcome-text-container :hover {
     font-size: large;
     font-family: sans-serif
 }
+
 .navbar ul li::after{
     content: '';
     height: 3px;
@@ -73,27 +40,35 @@ div.Welcome-text-container :hover {
 .navbar ul li:hover::after{
     width: 100%;
 }
-.content{
+    
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.item img{
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: white;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
-.content h1{
-    font-size: 60px;
-    margin-top: 80px;
+.item img:hover{
+    transform: scale(1.04);
 }
-.content p{
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
-    color: rgb(248, 228, 208);
 
+fieldset div{
+    text-align: center;
+    margin-top: 10px;
 }
-div.navbar {
-    box-sizing: border-box;
-    font-size: 100%;
-    padding-left: 5px;
+fieldset.footer section{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 20px;
+}
+footer fieldset.footer section align-self:hover{
+    transform: scale(1.2);
 }
